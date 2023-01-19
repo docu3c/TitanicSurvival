@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>Titanic Survival Prediction</title>
+  </head>
+
+  <body>
+    <h1><div style="text-align:center"><font color="blue">Survival Prediction from Titanic</font></div></h1>
+    <hr>
+    </br>
+    <h2><div style="text-align:center">Enter the values</div></h2>
+    </br>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-6'>
+          <form method="POST" action="/predict">
+            <div class="form-group">
+              <label for="Passengerid"><p class="font-weight-bold">Passengerid</p></label>
+              <input type="text" name="Passengerid">
+        
+              </div>
+
+              <div class="form-group">
+                <label for="Survived"><p class="font-weight-bold">Survived</p></label>
+                <input type="text" name="Survived">
+                
+                </div>
+
+                <div class="form-group">
+                  <label for="Pclass"><p class="font-weight-bold">Pclass</p></label>
+                  <input type="text" name="Pclass">
+                  
+                  </div>
+
+                  <div class="form-group">
+                    <label for="Sex"><p class="font-weight-bold">Sex</p></label>
+                    <input type="text" name="Sex">
+                    
+                    </div>
+
+                    <div class="form-group">
+                      <label for="Age"><p class="font-weight-bold">Age</p></label>
+                      <input type="text" name="Age">
+                    
+                      </div>
+
+                      <div class="form-group">
+                        <label for="SibSp"><p class="font-weight-bold">SibSp</p></label>
+                        <input type="text" name="SibSp">
+                        
+                        </div>
+                        <div class="form-group">
+                            <label for="Parch"><p class="font-weight-bold">Parch</p></label>
+                            <input type="text" name="Parch">
+                            
+                            </div>
+                            <div class="form-group">
+                                <label for="Ticket"><p class="font-weight-bold">Ticket</p></label>
+                                <input type="text" name="Ticket">
+                                
+                                </div>
+                                <div class="form-group">
+                                    <label for="Fare"><p class="font-weight-bold">Fare</p></label>
+                                    <input type="text" name="Fare">
+                                    
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Cabin"><p class="font-weight-bold">Cabin</p></label>
+                                        <input type="text" name="Cabin">
+                                        
+                                        </div>
+
+                        <input class='btn btn-primary' type='submit' value='Submit'>
+            </form>
+
+          </div>
+          </div>
+          </div>
+  </body>
+
+</html>
